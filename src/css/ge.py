@@ -1,0 +1,1 @@
+print('henok is a good')

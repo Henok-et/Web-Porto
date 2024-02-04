@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Great+Vibes&family=Inter:wght@300;400;500;600;700;800;900&family=Lato:wght@300&family=Montserrat:wght@500&family=Raleway:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <script
+      src="https://kit.fontawesome.com/8ca52177a5.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header class="header">
+      <nav class="main-navbar container" id="main-navbar">
+        <h2 class="logo">Henok</h2>
+        <ul id="menu-list">
+          <li><a href="Home.html" class="menu-links">Home</a></li>
+          <li><a href="About.html" class="menu-links">About</a></li>
+          <li>
+            <a href="Projects.html" class="menu-links">Projects Gallery</a>
+          </li>
+          <li><a href="Interests.html" class="menu-links">Interests</a></li>
+          <li><a href="Contact.html" class="menu-links">Contact</a></li>
+        </ul>
+        <i class="fa-solid fa-bars menu-bars" id="menu-bars"></i>
+      </nav>
+    </header>
+    <main class="contact-main">
+      <section class="container">
+        <h3>Reach Out</h3>
+        <div class="contact card">
+          <div class="contact-area">
+            <div class="contact-info location">
+              <i class="fa-solid fa-location-dot"></i>
+              <h4>Location:</h4>
+              <p>6killo, Addis Ababa, Ethiopia</p>
+            </div>
+
+            <div class="contact-info email">
+              <i class="fa-regular fa-envelope"></i>
+              <h4>Email:</h4>
+              <p>kindehenok@gmail.com</p>
+            </div>
+            <div class="contact-info phone">
+              <i class="fa-solid fa-mobile-screen-button"></i>
+              <h4>Phone:</h4>
+              <p>+251 967670690</p>
+            </div>
+            <iframe
+              src="https://maps.google.com/maps?q=AA%20University%206%20Kilo%20Campus%20%7C%20%E1%8A%A0.%E1%8A%A0%20%E1%8B%A9%E1%8A%92%E1%89%A8%E1%88%AD%E1%88%B2%E1%89%B2%206%20%E1%8A%AA%E1%88%8E%20%E1%8A%AB%E1%88%9D%E1%8D%93%E1%88%B5&t=k&z=13&ie=UTF8&iwloc=&output=embed"
+            ></iframe>
+          </div>
+
+          <div class="contact-form">
+            <div class="form">
+              <form>
+                <div class="name-email">
+                  <div class="form-group">
+                    <label for="name">Name</label>
+                    <input
+                      type="text"
+                      id="name"
+                      name="name"
+                      placeholder="Your name.."
+                    />
+                  </div>
+                  <div class="form-group">
+                    <label for="email">Email</label>
+                    <input
+                      type="email"
+                      id="email"
+                      name="email"
+                      placeholder="Your email.."
+                    />
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label for="subject">Subject</label>
+                  <input
+                    type="text"
+                    id="subject"
+                    name="subject"
+                    placeholder="Subject.."
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="message">Message</label>
+                  <textarea
+                    id="message"
+                    name="subject"
+                    placeholder="Write something.."
+                    style="height: 200px"
+                  ></textarea>
+                </div>
+                <input type="submit" value="Submit" class="submit" />
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <br />
+    <hr />
+    <footer class="footer contact-footer">
+      <ul>
+        <li>
+          <a href="https://www.facebook.com/henokkin"
+            ><i class="fa-brands fa-facebook-f"></i
+          ></a>
+        </li>
+        <li>
+          <a href="https://www.instagram.com/henokkin"
+            ><i class="fa-brands fa-instagram"></i>
+          </a>
+        </li>
+        <li>
+          <a href="https://www.linkedin.com/in/henok-kinde-648b9021b/"
+            ><i class="fa-brands fa-linkedin-in"></i
+          ></a>
+        </li>
+        <li>
+          <a href="https://twitter.com/HenokKin"
+            ><i class="fa-brands fa-x-twitter"></i>
+          </a>
+        </li>
+      </ul>
+      <p>&copy; Copyright 2023</p>
+    </footer>
+    <script>
+      const hamburger = document.getElementById("menu-bars");
+      const menulist = document.getElementById("menu-list");
+
+      hamburger.addEventListener("click", () => {
+        hamburger.classList.toggle("active");
+        menulist.classList.toggle("active");
+      });
+
+      document.querySelectorAll(".manu-links").forEach((item) => {
+        item.addEventListener("click", () => {
+          hamburger.classList.remove("active");
+          menulist.classList.remove("active");
+        });
+      });
+    </script>
+  </body>
+</html>

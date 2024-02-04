@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Great+Vibes&family=Inter:wght@300;400;500;600;700;800;900&family=Lato:wght@300&family=Montserrat:wght@500&family=Raleway:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <meta charset="UTF-8" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+    <title>Interests</title>
+    <link rel="stylesheet" href="css/styles.css" >
+    <script
+      src="https://kit.fontawesome.com/8ca52177a5.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header class="header">
+      <nav class="main-navbar container" id="main-navbar">
+        <h2 class="logo">Henok</h2>
+        <ul class="menu-list" id="menu-list">
+          <li><a href="Home.html">Home</a></li>
+          <li><a href="About.html">About</a></li>
+          <li><a href="Projects.html">Projects Gallery</a></li>
+          <li><a href="Interests.html">Interests</a></li>
+          <li><a href="Contact.html">Contact</a></li>
+        </ul>
+        <i class="fa-solid fa-bars menu-bars" id="menu-bars"></i>
+      </nav>
+    </header>
+    <main class="interests-main container">
+      <div class="interests">
+        <h3>Movies</h3>
+        <div class="movies-container">
+                 <div class="movie">
+                  <video controls>
+                    <source
+                      src="vid1.mp4"
+                      type="video/mp4"
+                    >
+                    Your browser does not support HTML video.
+                  </video>
+                 </div>
+                  
+              </class=>
+              <div class="movie">
+                <video controls>
+                  <source
+                    src="vid2.mp4"
+                    type="video/mp4"
+                  >
+                  Your browser does not support HTML video.
+                </video>
+              </div>
+              <div class="movie">
+                <video controls>
+                  <source
+                    src="vid3.mp4"
+                    type="video/mp4"
+                  >
+                  Your browser does not support HTML video.
+                </video>
+              </div>
+          </div>
+        <div class="music-movie">
+          <div>
+            <h3>Musics</h3>
+            <div class="musics">
+              <div class="songs">
+                <audio controls>
+                  <source
+                    src="music 1.mp3"
+                    type="audio/ogg"
+                  >
+                </audio>
+              </div>
+
+              <div class="songs">
+                <audio controls>
+                  <source
+                    src="music 2.mp3"
+                    type="audio/ogg"
+                  >
+                </audio>
+              </div>
+
+              <div class="songs">
+                <audio controls>
+                  <source
+                    src="music 3.mp3"
+                    type="audio/ogg"
+                  >
+                </audio>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="wrapper">
+          <h3>Sports</h3>
+          <div class="sports-container">
+            <div class="sport">
+              <img
+                src="images/image 1.jpg"
+                alt="image"
+                class="interests-img"
+              >
+            </div>
+            <div class="sport">
+              <img
+                src="images/image 2.jpg"
+                alt="image"
+                class="interests-img"
+              >
+            </div>
+            <div class="sport">
+              <img
+                src="images/image 3.jpg"
+                alt="cycling"
+                class="interests-img"
+              >
+            </div>
+          </div>
+          <div class="call-to-projecta">
+            <a href="Projects.html" class="call-to-project">See Projects</a>
+          </div>
+        </div>
+      </div>
+      
+    </main>
+   
+    <footer class="footer interets-footer">
+      <p>&copy; Copyright 2023</p>
+      <ul>
+        <li>
+          <a href="https://www.linkedin.com/in/henok-kinde-648b9021b/"><i class="fa-brands fa-linkedin-in"></i></a>
+        </li>
+        <li>
+          <a href="https://twitter.com/HenokKin"><i class="fa-brands fa-x-twitter"></i></a>
+        </li>
+      </ul>
+    </footer>
+
+    <script>
+      const hamburger = document.getElementById("menu-bars");
+      const menulist = document.getElementById("menu-list");
+
+      hamburger.addEventListener("click", () => {
+        hamburger.classList.toggle("active");
+        menulist.classList.toggle("active");
+      });
+
+      document.querySelectorAll(".manu-links").forEach((item) => {
+        item.addEventListener("click", () => {
+          hamburger.classList.remove("active");
+          menulist.classList.remove("active");
+        });
+      });
+    </script>
+  </body>
+</html>

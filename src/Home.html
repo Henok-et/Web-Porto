@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Great+Vibes&family=Inter:wght@300;400;500;600;700;800;900&family=Lato:wght@300&family=Montserrat:wght@500&family=Raleway:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <meta charset="UTF-8" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+    <title>Home</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css" >
+    <script
+      src="https://kit.fontawesome.com/8ca52177a5.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body class="home-body">
+    <header class="header">
+      <nav class="main-navbar container" id="main-navbar">
+        <h2 class="logo">Henok</h2>
+        <ul class="menu-list" id="menu-list">
+          <li><a href="Home.html" class="menu-links">Home</a></li>
+          <li><a href="About.html" class="menu-links">About</a></li>
+          <li><a href="Projects.html" class="menu-links">Projects Gallery</a></li>
+          <li><a href="Interests.html" class="menu-links">Interests</a></li>
+          <li><a href="Contact.html" class="menu-links">Contact</a></li>
+        </ul>
+        <i class="fa-solid fa-bars menu-bars" id="menu-bars"></i>
+      </nav>
+    </header>
+    <main class="home-main main">
+      <div class="main-container">
+        <div class="container-of-pp and smt">
+          <div class="column2">
+            <img src="images/person.png" alt="person" style="border-radius: 50%; border-style:solid; border-width: 0.5rem; border-color: wheat; max-width: 300px; width: 100%; height: auto;">
+            <div class="tag-div">
+              <a href="About.html" class="call-to home-call-to">Know more</a>
+            </div>
+        </div>
+        
+        </div>
+          
+          <div class="column1">
+            <div class="abooutt-me">
+              <div>
+                 <h1><em> I am: <br> Henok Kinde</em></h1><br> 
+             </div>
+                 <p>I am a 3rd-year Information Science student at the University of Addis Ababa. you will discover more about me and my projects at this website feel free to explore!</p>
+            </div> 
+            
+              <div class="slider">
+                <div>
+                  <img src="images/image 1.png" alt="image1">
+                </div>
+                <div>
+                  <img src="images/image 55.jpg" alt="image 333">
+                </div>
+                <div>
+                  <img src="images/image 333.png" alt="img">
+                </div>
+                <div>
+                    <img src="images/image 66.png" alt="img2">
+                </div>
+                <div>
+                  <img src="images/image 77.jpg" alt="img77">
+                </div>
+              </div>   
+                 
+            </div>  
+        </div>       
+      </div>
+    </main>
+      <hr>
+    <footer class="footer home-footer">
+      <p>&copy; Copyright 2023</p>
+      <ul>
+        <li>
+          <a href="https://www.facebook.com/henokkin"><i class="fa-brands fa-facebook-f"></i></a>
+        </li>
+        <li>
+          <a href="https://www.instagram.com/henokkin"><i class="fa-brands fa-instagram"></i> </a>
+        </li>
+        <li>
+          <a href="https://www.linkedin.com/in/henok-kinde-648b9021b/"><i class="fa-brands fa-linkedin-in"></i></a>
+        </li>
+        <li>
+          <a href="https://twitter.com/HenokKin"><i class="fa-brands fa-x-twitter"></i> </a>
+        </li>
+      </ul>
+    </footer>
+    <script>
+      const hamburger = document.getElementById("menu-bars");
+      const menulist = document.getElementById("menu-list");
+
+      hamburger.addEventListener("click", () => {
+        hamburger.classList.toggle("active");
+        menulist.classList.toggle("active");
+      });
+
+      document.querySelectorAll(".manu-links").forEach((item) => {
+        item.addEventListener("click", () => {
+          hamburger.classList.remove("active");
+          menulist.classList.remove("active");
+        });
+      });
+    </script>
+  </body>
+</html>
